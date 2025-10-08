@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+/* Общий контейнер */
+.container {
+  margin: 0 auto;
+  padding: 0 auto;
+  max-width: 1320px;
+}
+
+/* ШАПКА */
+
+.header_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-left: 300px;
+}
+
+.btn-call {
+  color: #fff;
+  background: #ff7700;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 15px;
+  border: none;
+  font-weight: 900;
+  margin-right: 300px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: background 0.4s;
+}
+
+.btn-call:hover {
+    background: rgba(247, 130, 53, 0.8);
+    color: white;
+}
+
+
+.header_line {
+  opacity: 0.4;
+  border: 1px solid;
+}
+
+.header_bottom {
+  padding: 20px;
+  padding-left: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-right: 300px;
+}
+
+.nav_list li,
+a {
+  font-size: 14px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* Main-секция */
+.main {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background: url(/img/main-pic.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.main-info {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.main-title {
+  font-size: 48px;
+  font-weight: lighter;
+  margin-bottom: 20px; /* отступ под заголовком */
+}
+
+.main-subtitle {
+  font-size: 18px;
+  margin-bottom: 30px; /* отступ под текстом */
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.main-button {
+  display: inline-block;
+  padding: 10px 25px; /* ← ВНУТРЕННИЕ ОТСТУПЫ КНОПКИ */
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: background 0.3s;
+}
+
+.main-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.preim-spisok {
+  display: flex;
+  justify-content: space-between;
+}
+
+.preim-head {
+ padding-left: 45px;
+ padding-top: 68px; 
+}
+
+.preim-text {
+  padding: 7px 2px;
+}
+
+.preim-element {
+  flex: 1 1 220px;
+  text-align: center;
+  display: inline-block;
+  list-style-type: none;
+  padding: 30px 20px;
+}
+
+.about {
+  padding: 80px 0;
+}
+
+.about-title {
+  padding-bottom: 59px;
+}
+
+.about-content {
+  margin-bottom: 40px;
+  padding-left: 92px;
+}
+
+.about-content p {
+  margin-bottom: 15px;
+}
+
+/* Форма подписки */
+.subscribe-form {
+  background: #ff7700;
+  padding: 25px 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.subscribe-text {
+  color: #fff;
+  margin: 0;
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+.subscribe-items {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+  flex: 2 1 auto;
+}
+
+.subscribe-item {
+  padding: 10px 15px;
+  border: none;
+  font-size: 14px;
+  background:rgba(255, 255, 255, 0.2);
+  width: 150px;
+  min-width: 120px;
+}
+
+.subscribe-item::placeholder {
+  color: black;
+}
+
+.subscribe-button {
+  padding: 10px 20px;
+  background: #fff;
+  color: black;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  background: #f0f0f0;
+}
+
